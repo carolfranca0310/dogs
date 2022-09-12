@@ -1,10 +1,14 @@
 import React from 'react'
-import style from './Header.module.css'
+import styles from './Header.module.css'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className='header'>
-        Header
+    <div className={styles.header}>
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/login">Login</Link>
+        </nav>
     </div>
   )
 }
