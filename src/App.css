@@ -1,4 +1,50 @@
-input{
+/* asterisco: todo item do site */
+/* box-sizing = soma o padding e o border ao hight e ao width*/
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  color: #333;
+  --type-first: Helvetica, Arial, sans-serif;
+  --type-second: 'spectral', Georgia;
+  font-family: var(--type-first);
+}
+
+h1, 
+h2,
+h3, 
+h4, 
+p {
+  margin: 0px;
+}
+
+/* list-style= estilo de lista, quando colocado o None, tira-se as bolinhas */
+ul, li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* max-width=100% para a imagem ficar responsiva, então ela só se expande até o tamanho maximo da tela */
+img {
   display: block;
-  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+/* i rem = 16px */
+button, input {
+  display: block;
+  font-size: 1 rem;
+  font-family: var(--type-first);
+  color: #333;
+}
+
+/* padding:  0 = pra cima e pra baixo ; 1 rem = pros lados*/
+/* margin= 0 e auto para alinhar só o centro */
+.container {
+  max-width: 50rem;
+  padding: 0 1rem;
+  margin: 0 auto;
 }
