@@ -1,0 +1,6 @@
+/* box-shadow(sombra): um px de distancia pra baixo, um px de blur */
+.header{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
+    padding: 0.5rem 0;
+    position: fixed;
+}
