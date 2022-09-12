@@ -1,5 +1,4 @@
 import React from 'react';
-import URL from '../URL';
 
 const PhotoPost = () => {
   const [token, setToken] = React.useState('');
@@ -16,9 +15,8 @@ const PhotoPost = () => {
     formData.append('nome', nome);
     formData.append('peso', peso);
     formData.append('idade', idade);
-    console.log(formData);
 
-    fetch(`${URL}/api/photo`, {
+    fetch('https://dogsapi.origamid.dev/json/api/photo', {
       method: 'POST',
       headers: {
         Authorization: 'Bearer ' + token,
@@ -39,25 +37,25 @@ const PhotoPost = () => {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Token"
+        placeholder="token"
         value={token}
         onChange={({ target }) => setToken(target.value)}
       />
       <input
         type="text"
-        placeholder="Nome"
+        placeholder="nome"
         value={nome}
         onChange={({ target }) => setNome(target.value)}
       />
       <input
         type="text"
-        placeholder="Peso"
+        placeholder="peso"
         value={peso}
         onChange={({ target }) => setPeso(target.value)}
       />
       <input
         type="text"
-        placeholder="Idade"
+        placeholder="idade"
         value={idade}
         onChange={({ target }) => setIdade(target.value)}
       />
