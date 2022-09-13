@@ -13,7 +13,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Login" element={<Login />} />
+          {/* rotas com subrotas devem vir acompanhadas de asterisco */}
+          <Route path="/Login/*" element={<Login />} />
         </Routes>
         <Footer />
       </BrowserRouter>
