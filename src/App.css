@@ -5,11 +5,13 @@
 }
 
 body{
+  padding-top: 6rem;
   margin: 0px;
   color: #333;
   --type-first: Helvetica, Arial, sans-serif;
   --type-second: 'spectral', Georgia;
   font-family: var(--type-first);
+  
 }
 
 h1, 
@@ -21,7 +23,8 @@ p {
 }
 
 /* list-style= estilo de lista, quando colocado o None, tira-se as bolinhas */
-ul, li {
+ul, 
+li {
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -34,11 +37,16 @@ img {
 }
 
 /* i rem = 16px */
-button, input {
+button, 
+input {
   display: block;
   font-size: 1 rem;
   font-family: var(--type-first);
   color: #333;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* padding:  0 = pra cima e pra baixo ; 1 rem = pros lados*/
